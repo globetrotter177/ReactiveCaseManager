@@ -1,0 +1,141 @@
+﻿<Window x:Class="ReactiveCases.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReactiveCases"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Create Cases" Height="1000" Width="600" WindowStyle="ThreeDBorderWindow" MinWidth="600">
+    <Border Padding="20">
+      <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <!--Date and Time-->
+            <TextBlock Text="Date and Time" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,10,0,0" Text="Start Date and Time" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="1" Margin="0,10,0,0" Text="End Date and Time" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="2" Margin="0,10,0,0" Text="Duration" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" DefaultValue="00:00" x:Name="tpiStartTime" ValueChanged="tpiStartTime_ValueChanged" Grid.Column="0" Margin="0,0,10,0"/>
+                    <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiEndTime" ValueChanged="EndTime_Changed" Grid.Column="1" Margin="0,0,10,0"/>
+                <TextBox x:Name="txtDurationTime" Grid.Column="2"/>
+            </Grid>
+            <!--System Information-->
+            <TextBlock Text="System Information" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,10,0,0" Text="Station" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="1" Margin="0,10,0,0" Text="Jig" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="2" Margin="0,10,0,0" Text="Device" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="3" Margin="0,10,0,0" Text="Subject" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="4" Margin="0,10,0,0" Text="Subject Area" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="cmbStation" Grid.Column="0" Margin="0,0,10,0" IsEditable="True"/>
+                <ComboBox x:Name="cmbJig" Grid.Column="1" Margin="0,0,10,0" IsEditable="True"/>
+                <ComboBox x:Name="cmbDevice" Grid.Column="2" Margin="0,0,10,0" IsEditable="True"/>
+                <ComboBox x:Name="cmbSubject" Grid.Column="3" Margin="0,0,10,0" IsEditable="True"/>
+                <ComboBox x:Name="cmbSubArea" Grid.Column="4" IsEditable="True"/>
+            </Grid>
+            <!--Detail Case Informations-->
+            <TextBlock Text="Detail Case Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <TextBlock Text="Initial Situation" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBox MaxHeight="100" x:Name="txtIniSitu" TextWrapping="Wrap"/>
+            <TextBlock Text="Trouble Shooting" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBox MaxHeight="100" x:Name="txtTrouShoot" TextWrapping="Wrap"/>
+            <TextBlock Text="Root Cause" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBox MaxHeight="100" x:Name="txtRootCause" TextWrapping="Wrap"/>
+            <TextBlock Text="Comments and Reports" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <TextBlock Margin="0,10,0,0" Text="Comments" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+            <TextBox MaxHeight="100" x:Name="txtComment" TextWrapping="Wrap"/>
+            <!--BAS Case informations-->
+            <TextBlock Text="BAS Case Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,10,0,0" Text="Case Number" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="1" Margin="0,10,0,0" Text="Status" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="2" Margin="0,10,0,0" Text="Comment" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtBasNumber" Grid.Column="0" Margin="0,0,10,0"/>
+                <ComboBox x:Name="cmbBasStatus" Grid.Column="1" Margin="0,0,10,0"/>
+                <TextBox x:Name="txtBasComment" Grid.Column="2"/>
+            </Grid>
+            <!--Other Informations-->
+            <TextBlock Text="Other Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <Grid Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Customer Representative" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBox x:Name="txtCustRep" Grid.Column="1"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Follow Up" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <CheckBox Grid.Column="1" x:Name="chbFollowUp" Checked="FollowUp_Checked" Unchecked="FollowUp_Checked"/>
+            </Grid>
+            <Grid x:Name="gridFollowUpHead" Margin="0,10,0,0" Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Date to be finished" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="1" Text="Reason" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="2" Text="Comment" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+            </Grid>
+            <Grid x:Name="gridFollowUpFields" Margin="0,10,0,0" Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <DatePicker Margin="0,0,10,0" Grid.Column="0"/>
+                <TextBox Grid.Column="1" x:Name="txtReasonFollowUp" Margin="0,0,10,0"/>
+                <TextBox Grid.Column="2" x:Name="txtCommentFollowUp" Margin="0,0,10,0"/>
+            </Grid>
+            </StackPanel>
+      </ScrollViewer>
+  </Border>
+</Window>
