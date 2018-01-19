@@ -25,6 +25,7 @@ namespace ReactiveCases
             InitializeComponent();
         }
 
+        //Eine Änderung
         private void EndTime_Changed(object sender, RoutedEventArgs e)
         {
             DateTime endTime = new DateTime();
