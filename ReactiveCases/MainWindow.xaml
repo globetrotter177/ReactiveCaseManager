@@ -30,9 +30,9 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" DefaultValue="00:00" x:Name="tpiStartTime" ValueChanged="tpiStartTime_ValueChanged" Grid.Column="0" Margin="0,0,10,0"/>
+                <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiStartTime" ValueChanged="tpiStartTime_ValueChanged" Grid.Column="0" Margin="0,0,10,0"/>
                     <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiEndTime" ValueChanged="EndTime_Changed" Grid.Column="1" Margin="0,0,10,0"/>
-                <TextBox x:Name="txtDurationTime" Grid.Column="2"/>
+                <TextBox x:Name="txtDurationTime" Grid.Column="2" IsReadOnly="True"/>
             </Grid>
             <!--System Information-->
             <TextBlock Text="System Information" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>

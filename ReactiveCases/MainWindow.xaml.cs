@@ -23,6 +23,7 @@ namespace ReactiveCases
         public MainWindow()
         {
             InitializeComponent();
+            //tpiStartTime.Value = tpiStartTime.DefaultValue.Value.Date;
         }
 
         //Eine Änderung
@@ -67,7 +68,7 @@ namespace ReactiveCases
             {
                 return;
             }
-            //EndTime_Changed();
+            //EndTime_Changed(tpiEndTime);
         }
     }
 }
