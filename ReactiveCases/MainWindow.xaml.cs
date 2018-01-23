@@ -24,7 +24,8 @@ namespace ReactiveCases
         public MainWindow()
         {
             InitializeComponent();
-            //tpiStartTime.Value = tpiStartTime.DefaultValue.Value.Date;
+            tpiStartTime.Value = DateTime.Now;
+            tpiEndTime.Value = DateTime.Now;
         }
 
         //Eine Änderung
