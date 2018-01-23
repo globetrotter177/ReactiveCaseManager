@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ReactiveCases"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Create Cases" Height="1000" Width="600" WindowStyle="ThreeDBorderWindow" MinWidth="600">
+        Title="Create Cases" Height="1000" Width="800" WindowStyle="ThreeDBorderWindow" MinWidth="600">
     <Border Padding="20">
       <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel>
@@ -31,7 +31,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiStartTime" ValueChanged="tpiStartTime_ValueChanged" Grid.Column="0" Margin="0,0,10,0"/>
-                    <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiEndTime" ValueChanged="EndTime_Changed" Grid.Column="1" Margin="0,0,10,0"/>
+                    <xctk:DateTimePicker Format="Custom" FormatString="dd.MM.yyyy HH:mm" x:Name="tpiEndTime" ValueChanged="tpiEndTime_ValueChanged" Grid.Column="1" Margin="0,0,10,0"/>
                 <TextBox x:Name="txtDurationTime" Grid.Column="2" IsReadOnly="True"/>
             </Grid>
             <!--System Information-->
@@ -75,28 +75,6 @@
             <TextBlock Text="Comments and Reports" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
             <TextBlock Margin="0,10,0,0" Text="Comments" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
             <TextBox MaxHeight="100" x:Name="txtComment" TextWrapping="Wrap"/>
-            <!--BAS Case informations-->
-            <TextBlock Text="BAS Case Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Margin="0,10,0,0" Text="Case Number" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
-                <TextBlock Grid.Column="1" Margin="0,10,0,0" Text="Status" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
-                <TextBlock Grid.Column="2" Margin="0,10,0,0" Text="Comment" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
-            </Grid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <TextBox x:Name="txtBasNumber" Grid.Column="0" Margin="0,0,10,0"/>
-                <ComboBox x:Name="cmbBasStatus" Grid.Column="1" Margin="0,0,10,0"/>
-                <TextBox x:Name="txtBasComment" Grid.Column="2"/>
-            </Grid>
             <!--Other Informations-->
             <TextBlock Text="Other Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
             <Grid Margin="0,10,0,0">
@@ -107,15 +85,49 @@
                 <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Customer Representative" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
                 <TextBox x:Name="txtCustRep" Grid.Column="1"/>
             </Grid>
+            <TextBlock Text="Further Action and Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10"/>
+            <!--Check if a BAS-Case exist-->
             <Grid Margin="0,10,0,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Follow Up" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Does a BAS-Case exist? If yes, klick the tick-box." TextAlignment="Right" FontStyle="Italic" FontWeight="Bold" Background="#eef"/>
+                <CheckBox Grid.Column="1" x:Name="chbBASCase" Checked="chbBASCase_Checked" Unchecked="chbBASCase_Checked"/>
+            </Grid>
+            <!--BAS Case informations-->
+            <TextBlock x:Name="txbBASCase" Text="BAS Case Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10" Visibility="Collapsed"/>
+            <Grid x:Name="gridBASCaseHead" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,10,0,0" Text="Case Number" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="1" Margin="0,10,0,0" Text="Status" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+                <TextBlock Grid.Column="2" Margin="0,10,0,0" Text="Comment" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
+            </Grid>
+            <Grid x:Name="gridBASCaseFields" Visibility="Collapsed" Margin="0,0,0,40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="txtBasNumber" Grid.Column="0" Margin="0,0,10,0"/>
+                <ComboBox x:Name="cmbBasStatus" Grid.Column="1" Margin="0,0,10,0"/>
+                <TextBox x:Name="txtBasComment" Grid.Column="2"/>
+            </Grid>
+            <!--Has to be followed-up-->
+            <Grid Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Margin="0,0,10,0" Text="Does it need a Follow-Up? If yes, klick the tick-box." TextAlignment="Right" FontStyle="Italic" FontWeight="Bold" Background="#eef"/>
                 <CheckBox Grid.Column="1" x:Name="chbFollowUp" Checked="FollowUp_Checked" Unchecked="FollowUp_Checked"/>
             </Grid>
-            <Grid x:Name="gridFollowUpHead" Margin="0,10,0,0" Visibility="Hidden">
+            <TextBlock x:Name="txbFollowUp" Text="Follow-Up Informations" Background="#edd" TextAlignment="Center" FontSize="22" FontWeight="ExtraBold" Margin="0,40,0,10" Visibility="Collapsed"/>
+            <Grid x:Name="gridFollowUpHead" Margin="0,10,0,0" Visibility="Collapsed">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -124,8 +136,8 @@
                 <TextBlock Grid.Column="0" Text="Date to be finished" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
                 <TextBlock Grid.Column="1" Text="Reason" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
                 <TextBlock Grid.Column="2" Text="Comment" TextAlignment="Center" FontStyle="Italic" FontWeight="Bold"/>
-            </Grid>
-            <Grid x:Name="gridFollowUpFields" Margin="0,10,0,0" Visibility="Hidden">
+                </Grid>
+            <Grid x:Name="gridFollowUpFields" Margin="0,10,0,0" Visibility="Collapsed">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -135,7 +147,8 @@
                 <TextBox Grid.Column="1" x:Name="txtReasonFollowUp" Margin="0,0,10,0"/>
                 <TextBox Grid.Column="2" x:Name="txtCommentFollowUp" Margin="0,0,10,0"/>
             </Grid>
-            </StackPanel>
+
+         </StackPanel>
       </ScrollViewer>
   </Border>
 </Window>

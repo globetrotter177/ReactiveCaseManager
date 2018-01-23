@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xceed.Wpf.Toolkit;
 
 namespace ReactiveCases
 {
@@ -27,14 +28,53 @@ namespace ReactiveCases
         }
 
         //Eine Änderung
-        private void EndTime_Changed(object sender, RoutedEventArgs e)
+
+        private void FollowUp_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((bool)(chbFollowUp.IsChecked))
+            {
+                // MessageBox.Show("Checkbock aktiv!");
+                txbFollowUp.Visibility = Visibility.Visible;
+                gridFollowUpHead.Visibility = Visibility.Visible;
+                gridFollowUpFields.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                // MessageBox.Show("Checkbock deaktiviert!");
+                txbFollowUp.Visibility = Visibility.Collapsed;
+                gridFollowUpHead.Visibility = Visibility.Collapsed;
+                gridFollowUpFields.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void tpiStartTime_ValueChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            DateTime endTime = new DateTime();
+            DateTime startTime = new DateTime();
+            TimeSpan durationTime = new TimeSpan();
+            startTime = (DateTime)tpiStartTime.Value;
+
+            if (tpiEndTime.Value != null)
+            {
+                endTime = (DateTime)tpiEndTime.Value;
+                durationTime = endTime.Subtract(startTime);
+                txtDurationTime.Text = durationTime.ToString(@"d\.hh\:mm");
+            }
+            else
+            {
+                tpiEndTime.Value = startTime;
+            }
+            //EndTime_Changed(tpiEndTime, tpiEndTime);
+        }
+
+        private void tpiEndTime_ValueChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
             DateTime endTime = new DateTime();
             DateTime startTime = new DateTime();
             TimeSpan durationTime = new TimeSpan();
             endTime = (DateTime)tpiEndTime.Value;
 
-            if (tpiStartTime != null)
+            if (tpiStartTime.Value != null)
             {
                 startTime = (DateTime)tpiStartTime.Value;
                 durationTime = endTime.Subtract(startTime);
@@ -44,31 +84,35 @@ namespace ReactiveCases
             {
                 tpiStartTime.Value = endTime;
             }
+
         }
 
-        private void FollowUp_Checked(object sender, RoutedEventArgs e)
+        private void chbBASCase_Checked(object sender, RoutedEventArgs e)
         {
-            if ((bool)(chbFollowUp.IsChecked))
+            if ((bool)(chbBASCase.IsChecked))
             {
-               // MessageBox.Show("Checkbock aktiv!");
-                gridFollowUpHead.Visibility = Visibility.Visible;
-                gridFollowUpFields.Visibility = Visibility.Visible;
+                // MessageBox.Show("Checkbock aktiv!");
+                txbBASCase.Visibility = Visibility.Visible;
+                gridBASCaseHead.Visibility = Visibility.Visible;
+                gridBASCaseFields.Visibility = Visibility.Visible;
             }
             else
             {
-               // MessageBox.Show("Checkbock deaktiviert!");
-                gridFollowUpHead.Visibility = Visibility.Hidden;
-                gridFollowUpFields.Visibility = Visibility.Hidden;
+                // MessageBox.Show("Checkbock deaktiviert!");
+                txbBASCase.Visibility = Visibility.Collapsed;
+                gridBASCaseHead.Visibility = Visibility.Collapsed;
+                gridBASCaseFields.Visibility = Visibility.Collapsed;
             }
+
         }
 
-        private void tpiStartTime_ValueChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+
+
+        /*
+        private void EndTime_Changed(DateTimePicker tpiEndTime1, DateTimePicker tpiEndTime2)
         {
-            if(tpiEndTime==null)
-            {
-                return;
-            }
-            //EndTime_Changed(tpiEndTime);
+            throw new NotImplementedException();
         }
+        */
     }
 }
