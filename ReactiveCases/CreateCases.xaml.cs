@@ -19,9 +19,9 @@ namespace ReactiveCases
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateWindow : Window
     {
-        public MainWindow()
+        public CreateWindow()
         {
             InitializeComponent();
             tpiStartTime.Value = DateTime.Now;
@@ -104,6 +104,44 @@ namespace ReactiveCases
                 gridBASCaseHead.Visibility = Visibility.Collapsed;
                 gridBASCaseFields.Visibility = Visibility.Collapsed;
             }
+
+        }
+
+        private void btnCloseForm_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnResetForm_Click(object sender, RoutedEventArgs e)
+        {
+            /*foreach (Control ctl in AllControls.Children)
+            {
+                if (ctl.GetType() == typeof(CheckBox))
+                    ((CheckBox)ctl).IsChecked = false;
+                   if (ctl.GetType() == typeof(TextBox))
+                    ((TextBox)ctl).Text = String.Empty;
+            }*/
+            txbBASCase.Text = "";
+            txbFollowUp.Text = "";
+            txtBasComment.Text = "";
+            txtBasNumber.Text = "";
+            txtComment.Text = "";
+            txtCommentFollowUp.Text = "";
+            txtCustRep.Text = "";
+            txtIniSitu.Text = "";
+            txtReasonFollowUp.Text = "";
+            txtRootCause.Text = "";
+            txtTrouShoot.Text = "";
+            tpiStartTime.Value = DateTime.Now;
+            tpiEndTime.Value = DateTime.Now;
+            cmbBasStatus.Text = "";
+            cmbDevice.Text = "";
+            cmbJig.Text = "";
+            cmbStation.Text = "";
+            cmbSubArea.Text = "";
+            cmbSubject.Text = "";
+            chbBASCase.IsChecked = false;
+            chbFollowUp.IsChecked = false;
 
         }
 

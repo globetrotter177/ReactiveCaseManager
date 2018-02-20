@@ -100,7 +100,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="StartWindow.xaml.cs">
+      <DependentUpon>StartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Page Include="CreateCases.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -109,10 +113,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CaseDataHandling.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="CreateCases.xaml.cs">
+      <DependentUpon>CreateCases.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -153,6 +161,48 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\AccessKey.ico" />
+    <Resource Include="Icons\BinEmpty.ico" />
+    <Resource Include="Icons\BinFull.ico" />
+    <Resource Include="Icons\BunchOfKeys.ico" />
+    <Resource Include="Icons\ComputerScreen.ico" />
+    <Resource Include="Icons\DesktopComputer.ico" />
+    <Resource Include="Icons\Drive.ico" />
+    <Resource Include="Icons\Forbidden.ico" />
+    <Resource Include="Icons\Internet.ico" />
+    <Resource Include="Icons\Letter_i.ico" />
+    <Resource Include="Icons\OnOffButton.ico" />
+    <Resource Include="Icons\OpenFolder.ico" />
+    <Resource Include="Icons\Padlock.ico" />
+    <Resource Include="Icons\RecycleBinEmpty.ico" />
+    <Resource Include="Icons\RecycleBinFull.ico" />
+    <Resource Include="Icons\RedCrossMark.ico" />
+    <Resource Include="Icons\SaveFile.ico" />
+    <Resource Include="Icons\Search.ico" />
+    <Resource Include="Icons\Start.ico" />
+    <Resource Include="Icons\System.ico" />
+    <Resource Include="Icons\TickMark.ico" />
+    <Resource Include="Icons\Tools.ico" />
+    <Resource Include="Icons\UserGroup.ico" />
+    <Resource Include="Icons\UserKey.ico" />
+    <Resource Include="Icons\Warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\NewFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\FolderWithFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\ComputerQuery.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\NewDocument.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
