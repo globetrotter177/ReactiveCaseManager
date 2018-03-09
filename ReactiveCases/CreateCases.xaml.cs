@@ -54,12 +54,14 @@ namespace ReactiveCases
             DateTime startTime = new DateTime();
             TimeSpan durationTime = new TimeSpan();
             startTime = (DateTime)tpiStartTime.Value;
+            string dts;
 
             if (tpiEndTime.Value != null)
             {
                 endTime = (DateTime)tpiEndTime.Value;
                 durationTime = endTime.Subtract(startTime);
-                txtDurationTime.Text = durationTime.ToString(@"d\.hh\:mm");
+                dts = String.Format("{0}:{1}", (int)durationTime.TotalHours, durationTime.Minutes);
+                txtDurationTime.Text = dts;
             }
             else
             {
@@ -74,12 +76,14 @@ namespace ReactiveCases
             DateTime startTime = new DateTime();
             TimeSpan durationTime = new TimeSpan();
             endTime = (DateTime)tpiEndTime.Value;
+            string dts;
 
             if (tpiStartTime.Value != null)
             {
                 startTime = (DateTime)tpiStartTime.Value;
                 durationTime = endTime.Subtract(startTime);
-                txtDurationTime.Text = durationTime.ToString(@"d\.hh\:mm");
+                dts = String.Format("{0}:{1}", (int)durationTime.TotalHours, durationTime.Minutes);
+                txtDurationTime.Text = dts;
             }
             else
             {

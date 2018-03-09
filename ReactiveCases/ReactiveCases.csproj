@@ -62,8 +62,18 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Nevron.Nov.Barcode, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Chart, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Diagram, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Grid, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Host.Wpf, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Presentation, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Schedule, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.Text, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
+    <Reference Include="Nevron.Nov.WpfControls, Version=18.1.18.12, Culture=neutral, PublicKeyToken=b33b1a04bb5ca8ad, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -100,6 +110,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataGridTest.xaml.cs">
+      <DependentUpon>DataGridTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
@@ -117,6 +130,10 @@
       <DependentUpon>CreateCases.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="DataGridTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StartWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -203,6 +220,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\NewDocument.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReactiveCases.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

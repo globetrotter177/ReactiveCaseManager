@@ -5,86 +5,93 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReactiveCases"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-        xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
         mc:Ignorable="d"
-        Title="StartWindow" Height="300" Width="300">
-    <StackPanel>
-        <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="New Case File...">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/NewFile.ico"/>
-                    </MenuItem.Icon>
+        Title="Maintenance Case Manager" Height="300" Width="300">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="New Case File...">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/NewFile.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Open" Click="MenuItem_Click_OpenFile">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/OpenFolder.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Save">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/SaveFile.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Save as...">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/SaveFile.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Close Application" Click="MenuItem_Click_Close">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/onOffButton.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Open">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/OpenFolder.ico"/>
-                    </MenuItem.Icon>
+                <MenuItem Header="Cases">
+                    <MenuItem Header="Group">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/FolderWithFile.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Filter">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/ComputerQuery.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="New..." Click="MenuItem_Click_NewCase">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/NewDocument.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Delete...">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/RedCrossMark.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_Save">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/SaveFile.ico"/>
-                    </MenuItem.Icon>
+                <MenuItem Header="Tools">
+                    <MenuItem Header="Settings">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/Settings.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Users">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/UserGroup.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-                <Separator/>
-                <MenuItem Header="Close Application" Click="MenuItem_Click_Close">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/onOffButton.ico"/>
-                    </MenuItem.Icon>
+                <MenuItem Header="Help">
+                    <MenuItem Header="Show Help">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/Letter_i.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Info">
+                        <MenuItem.Icon>
+                            <Image Width="16" Height="16" Source="Icons/System.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-            </MenuItem>
-            <MenuItem Header="Cases">
-                <MenuItem Header="Group">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/FolderWithFile.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Filter">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/ComputerQuery.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <Separator/>
-                <MenuItem Header="New..." Click="MenuItem_Click_NewCase">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/NewDocument.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <Separator/>
-                <MenuItem Header="Delete...">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/RedCrossMark.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-            </MenuItem>
-            <MenuItem Header="Tools">
-                <MenuItem Header="Settings">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/Settings.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Users">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/UserGroup.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-            </MenuItem>
-            <MenuItem Header="Help">
-                <MenuItem Header="Show Help">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/Letter_i.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <Separator/>
-                <MenuItem Header="Info">
-                    <MenuItem.Icon>
-                        <Image Width="16" Height="16" Source="Icons/System.ico"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-            </MenuItem>
-        </Menu>
-        <Grid>
-            
-        </Grid>
-    </StackPanel>
+            </Menu>
+            <Grid>
+                <DataGrid x:Name="caseGrid" ItemsSource="{Binding}">
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
 </Window>

@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cases>
+  <Case>
+    <ID.>1</ID.>
+    <Date>08.12.2017</Date>
+    <Start>14:06</Start>
+    <End>14:06</End>
+    <Duration>00:00</Duration>
+    <Station>Neu Station</Station>
+    <Jig>Neues Jig</Jig>
+    <Device>Neue Device</Device>
+    <Subject>Neues Subject</Subject>
+    <SubjectArea>Neue Are</SubjectArea>
+    <InitialSituation>Neue Situation</InitialSituation>
+    <TroubleShooting>V�llig willk�rlich</TroubleShooting>
+    <RootCause>Stark verwurzelt</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>2</ID.>
+    <Date>06.12.2017</Date>
+    <Start>14:08</Start>
+    <End>14:17</End>
+    <Duration>00:09</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Altes Jig</Jig>
+    <Device>Alte Device</Device>
+    <Subject>Altes Subject</Subject>
+    <SubjectArea>Alte Area</SubjectArea>
+    <InitialSituation>Wie immer v�llig verfahren</InitialSituation>
+    <TroubleShooting>Trouble reichlich</TroubleShooting>
+    <RootCause>Wurzelbehandlung</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>3</ID.>
+    <Date>07.12.2017</Date>
+    <Start>14:04</Start>
+    <End>15:12</End>
+    <Duration>01:08</Duration>
+    <Station>Die Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Die Device</Device>
+    <Subject>Das Subject</Subject>
+    <SubjectArea>Die Area</SubjectArea>
+    <InitialSituation>Es wird sich ergeben</InitialSituation>
+    <TroubleShooting>Wir schie�en scharf.</TroubleShooting>
+    <RootCause>Auf den Grund gegangen.</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>4</ID.>
+    <Date>11.12.2017</Date>
+    <Start>14:35</Start>
+    <End>14:00</End>
+    <Duration>23:25</Duration>
+    <Station>Die Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Eine Device</Device>
+    <Subject>Ein Subject</Subject>
+    <SubjectArea>Eine Area</SubjectArea>
+    <InitialSituation>Noch ein Text</InitialSituation>
+    <TroubleShooting>Immer Trouble</TroubleShooting>
+    <RootCause>Ein Wurzelm�nnchen</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+   </Case>
+  <Case>
+    <ID.>5</ID.>
+    <Date>11.12.2017</Date>
+    <Start>15:08</Start>
+    <End>15:13</End>
+    <Duration>00:05</Duration>
+    <Station>Eine Station</Station>
+    <Jig>Ein Jig</Jig>
+    <Device>Moderne Device</Device>
+    <Subject>Modernes Subject</Subject>
+    <SubjectArea>Moderne Area</SubjectArea>
+    <InitialSituation>Wers glaubt...</InitialSituation>
+    <TroubleShooting>Nur kein Trouble</TroubleShooting>
+    <RootCause>Es ist nachverfolgbar.</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>6</ID.>
+    <Date>12.12.2017</Date>
+    <Start>10:07</Start>
+    <End>10:07</End>
+    <Duration>00:00</Duration>
+    <Station>Jene Station</Station>
+    <Jig>Jenes Jig</Jig>
+    <Device>Jene Device</Device>
+    <Subject>Jenes Subject</Subject>
+    <SubjectArea>Jene Area</SubjectArea>
+    <InitialSituation>Unter Kontrolle</InitialSituation>
+    <TroubleShooting>V�llig verfahren</TroubleShooting>
+    <RootCause>Immer die andeeren.</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>7</ID.>
+    <Date>10.12.2017</Date>
+    <Start>07:40</Start>
+    <End>08:04</End>
+    <Duration>00:24</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Die Device</Device>
+    <Subject>Noch ein Subject</Subject>
+    <SubjectArea>Noch eine Area</SubjectArea>
+    <InitialSituation>Immer das Gleiche</InitialSituation>
+    <TroubleShooting>Immer der Gleiche</TroubleShooting>
+    <RootCause>Immer die Gleiche</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>8</ID.>
+    <Date>08.12.2017</Date>
+    <Start>10:10</Start>
+    <End>10:10</End>
+    <Duration>00:00</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Neue Device</Device>
+    <Subject>Lausiges Subject</Subject>
+    <SubjectArea>Riesige Area</SubjectArea>
+    <InitialSituation>Wei� keiner</InitialSituation>
+    <TroubleShooting>Ist offen</TroubleShooting>
+    <RootCause>Eindeutig</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>9</ID.>
+    <Date>10.12.2017</Date>
+    <Start>12:30</Start>
+    <End>12:38</End>
+    <Duration>00:08</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Moderne Device</Device>
+    <Subject>Kein Subject</Subject>
+    <SubjectArea>Keine Area</SubjectArea>
+    <InitialSituation>Geht doch!</InitialSituation>
+    <TroubleShooting>Oder doch nicht?</TroubleShooting>
+    <RootCause>Oder doch....</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>10</ID.>
+    <Date>23.11.2017</Date>
+    <Start>14:51</Start>
+    <End>15:28</End>
+    <Duration>00:37</Duration>
+    <Station>Volle Station</Station>
+    <Jig>Volles Jig</Jig>
+    <Device>Volle Device</Device>
+    <Subject>Riesiges Subject</Subject>
+    <SubjectArea>M�chtige Area</SubjectArea>
+    <InitialSituation>Geht oder geht nicht</InitialSituation>
+    <TroubleShooting>Immer Locker bleiben</TroubleShooting>
+    <RootCause>Unterirdisch</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>11</ID.>
+    <Date>24.11.2017</Date>
+    <Start>16:21</Start>
+    <End>16:48</End>
+    <Duration>00:27</Duration>
+    <Station>Windige Station</Station>
+    <Jig>Windiges Jig</Jig>
+    <Device>Windige Device</Device>
+    <Subject>Windiges Subject</Subject>
+    <SubjectArea>Alte Area</SubjectArea>
+    <InitialSituation>Es entwickelt sich</InitialSituation>
+    <TroubleShooting>Blo� keinen Touble machen</TroubleShooting>
+    <RootCause>Wir werden es erkennen, wenn wir es sehen.</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>12</ID.>
+    <Date>20.11.2017</Date>
+    <Start>16:31</Start>
+    <End>17:00</End>
+    <Duration>00:29</Duration>
+    <Station>Winzige Station</Station>
+    <Jig>Winziges Jig</Jig>
+    <Device>Winzige Davice</Device>
+    <Subject>Windiges Subject</Subject>
+    <SubjectArea>Windige Area</SubjectArea>
+    <InitialSituation>Alles im Fluss</InitialSituation>
+    <TroubleShooting>Nie mehr Trouble</TroubleShooting>
+    <RootCause>Wir schaffen das</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>13</ID.>
+    <Date>20.11.2017</Date>
+    <Start>16:36</Start>
+    <End>16:57</End>
+    <Duration>00:21</Duration>
+    <Station>Gro�e Station</Station>
+    <Jig>Altes Jig</Jig>
+    <Device>Massige Device</Device>
+    <Subject>Kleines Subject</Subject>
+    <SubjectArea>Kleine Area</SubjectArea>
+    <InitialSituation>Gefahr erkannt, Gefahr gebannt</InitialSituation>
+    <TroubleShooting>Es lohnt sich immer</TroubleShooting>
+    <RootCause>Wir kommen klar</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>14</ID.>
+    <Date>19.11.2017</Date>
+    <Start>16:45</Start>
+    <End>17:11</End>
+    <Duration>00:26</Duration>
+    <Station>Knackige Station</Station>
+    <Jig>Knackiges Jig</Jig>
+    <Device>Knackige Device</Device>
+    <Subject>Knackiges Subject</Subject>
+    <SubjectArea>Knackige Area</SubjectArea>
+    <InitialSituation>Ist klar soweit</InitialSituation>
+    <TroubleShooting>Ist unklar soweit</TroubleShooting>
+    <RootCause>Ist soweit</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+
+	</Case>
+  <Case>
+    <ID.>15</ID.>
+    <Date>15.11.2017</Date>
+    <Start>16:49</Start>
+    <End>17:15</End>
+    <Duration>00:26</Duration>
+    <Station>Fitte Station</Station>
+    <Jig>Fittes Jig</Jig>
+    <Device>Fitte Device</Device>
+    <Subject>Fittes Subject</Subject>
+    <SubjectArea>Fitte Area</SubjectArea>
+    <InitialSituation>Alles auf Anfang</InitialSituation>
+    <TroubleShooting>Alles zuende</TroubleShooting>
+    <RootCause>Alles unterirdisch</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>16</ID.>
+    <Date>17.11.2017</Date>
+    <Start>16:53</Start>
+    <End>17:09</End>
+    <Duration>00:16</Duration>
+    <Station>Drollige Station</Station>
+    <Jig>Drolliges Jig</Jig>
+    <Device>Drollige Device</Device>
+    <Subject>Drolliges Subject</Subject>
+    <SubjectArea>Drollige Area</SubjectArea>
+    <InitialSituation>Wir initialisieren</InitialSituation>
+    <TroubleShooting>Wir troublen</TroubleShooting>
+    <RootCause>Wir schlagen Wurzeln</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>17</ID.>
+    <Date>04.12.2017</Date>
+    <Start>16:22</Start>
+    <End>17:26</End>
+    <Duration>01:04</Duration>
+    <Station>Meine Station</Station>
+    <Jig>Mein Jig</Jig>
+    <Device>Meine Device</Device>
+    <Subject>Mein Subject</Subject>
+    <SubjectArea>Meine Area</SubjectArea>
+    <InitialSituation>Ich wei� nicht</InitialSituation>
+    <TroubleShooting>Ich will nicht</TroubleShooting>
+    <RootCause>Ich kann nicht</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>18</ID.>
+    <Date>05.12.2017</Date>
+    <Start>15:29</Start>
+    <End>16:00</End>
+    <Duration>00:31</Duration>
+    <Station>Die Station</Station>
+    <Jig>Drolliges Jig</Jig>
+    <Device>Eine Device</Device>
+    <Subject>Das Subject</Subject>
+    <SubjectArea>Jene Area</SubjectArea>
+    <InitialSituation>qqwwwede</InitialSituation>
+    <TroubleShooting>qwwewerqw</TroubleShooting>
+    <RootCause>ewaqrwetr</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>19</ID.>
+    <Date>06.12.2017</Date>
+    <Start>17:14</Start>
+    <End>17:44</End>
+    <Duration>00:30</Duration>
+    <Station>Windige Station</Station>
+    <Jig>Jenes Jig</Jig>
+    <Device>Drollige Device</Device>
+    <Subject>Altes Subject</Subject>
+    <SubjectArea>Die Area</SubjectArea>
+    <InitialSituation>assssssssssdddddddddd</InitialSituation>
+    <TroubleShooting>yxcccvvv</TroubleShooting>
+    <RootCause>qwerrtr</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>20</ID.>
+    <Date>09.12.2017</Date>
+    <Start>17:56</Start>
+    <End>18:37</End>
+    <Duration>00:41</Duration>
+    <Station>Gro�e Station</Station>
+    <Jig>Altes Jig</Jig>
+    <Device>Fitte Device</Device>
+    <Subject>Ein Subject</Subject>
+    <SubjectArea>Drollige Area</SubjectArea>
+    <InitialSituation>fghgfhfghfgh</InitialSituation>
+    <TroubleShooting>ghjgjhghmghvmj</TroubleShooting>
+    <RootCause>vbncvncvbn</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>21</ID.>
+    <Date>06.12.2017</Date>
+    <Start>17:56</Start>
+    <End>18:53</End>
+    <Duration>00:57</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Altes Jig</Jig>
+    <Device>Alte Device</Device>
+    <Subject>Altes Subject</Subject>
+    <SubjectArea>Alte Area</SubjectArea>
+    <InitialSituation>iuouzouiozu</InitialSituation>
+    <TroubleShooting>vhjmjvbnjm</TroubleShooting>
+    <RootCause>gjhgfjghjk</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>22</ID.>
+    <Date>10.12.2017</Date>
+    <Start>09:33</Start>
+    <End>09:33</End>
+    <Duration>00:00</Duration>
+    <Station>Drollige Station</Station>
+    <Jig>Das Jig</Jig>
+    <Device>Jene Device</Device>
+    <Subject>Kleines Subject</Subject>
+    <SubjectArea>Eine Area</SubjectArea>
+    <InitialSituation>aiuwfiauewfriu</InitialSituation>
+    <TroubleShooting>�oihsdcoihas</TroubleShooting>
+    <RootCause>�ooihyxc v�klnbysd�kvjbh</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>23</ID.>
+    <Date>11.12.2017</Date>
+    <Start>12:46</Start>
+    <End>13:19</End>
+    <Duration>00:33</Duration>
+    <Station>Windige Station</Station>
+    <Jig>Drolliges Jig</Jig>
+    <Device>Knackige Device</Device>
+    <Subject>Altes Subject</Subject>
+    <SubjectArea>Eine Area</SubjectArea>
+    <InitialSituation>�lxc�vbj</InitialSituation>
+    <TroubleShooting>���dxflbml</TroubleShooting>
+    <RootCause>�pydpfvjo</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>24</ID.>
+    <Date>13.12.2017</Date>
+    <Start>16:19</Start>
+    <End>16:38</End>
+    <Duration>00:19</Duration>
+    <Station>Alte Station</Station>
+    <Jig>Drolliges Jig</Jig>
+    <Device>Jene Device</Device>
+    <Subject>Das Subject</Subject>
+    <SubjectArea>Keine Area</SubjectArea>
+    <InitialSituation>aerserg</InitialSituation>
+    <TroubleShooting>sergfrsdfbg</TroubleShooting>
+    <RootCause>xcvbfgn</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+  <Case>
+    <ID.>25</ID.>
+    <Date>13.12.2017</Date>
+    <Start>16:56</Start>
+    <End>17:28</End>
+    <Duration>00:32</Duration>
+    <Station>Gro�e Station</Station>
+    <Jig>Ein Jig</Jig>
+    <Device>Jene Device</Device>
+    <Subject>Altes Subject</Subject>
+    <SubjectArea>Drollige Area</SubjectArea>
+    <InitialSituation>sydrgfgnbhgcfn</InitialSituation>
+    <TroubleShooting>xdtrgrthdrthjn</TroubleShooting>
+    <RootCause> vvbncn</RootCause>
+    <BASCase></BASCase>
+    <BASCaseNumber></BASCaseNumber>
+    <CaseStatus></CaseStatus>
+    <Comment></Comment>
+    <FurtherAction></FurtherAction>
+    <GKNContact></GKNContact>
+    <CoveredByContract></CoveredByContract>
+    <Created>
+      <Changed></Changed>
+    </Created>
+    <Follow-Up></Follow-Up>
+    <F-Date></F-Date>
+  </Case>
+</Cases>

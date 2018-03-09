@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Data;
+using System.Windows;
 
 namespace ReactiveCases
 {
@@ -21,6 +22,20 @@ namespace ReactiveCases
         private void MenuItem_Click_Close(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void MenuItem_Click_OpenFile(object sender, RoutedEventArgs e)
+        {
+            string filename = Utilities.OpenXMLFile();
+
+            if (filename != null)
+            {
+                DataSet caseDataSet = new DataSet();
+                caseDataSet.ReadXml(filename);
+                DataView caseDataView = new DataView(caseDataSet.Tables[0]);
+                caseGrid.ItemsSource = caseDataView;
+            }
+            else MessageBox.Show(string.Format("The return value is {0}", filename));
         }
     }
 }
